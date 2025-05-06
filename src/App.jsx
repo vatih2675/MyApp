@@ -5,7 +5,6 @@ import Weather from "./pages/weather/Index";
 import Gold from "./pages/gold/Index";
 import Nik from "./pages/nik/Index";
 import Address from "./pages/address/Index";
-import Zodiak from "./pages/zodiak/Index";
 import Nationality from "./pages/nationality/Index";
 import Bmkg from "./pages/bmkg/Index";
 import School from "./pages/school/Index";
@@ -13,7 +12,6 @@ import Qr from "./pages/qr/Index";
 import Ftp from "./pages/ftp/Index";
 
 export default function App() {
-
   return (
     <BrowserRouter>
       <Topbar />
@@ -24,7 +22,6 @@ export default function App() {
           <Route path="/gold" element={<Gold />} />
           <Route path="/nik" element={<Nik />} />
           <Route path="/address" element={<Address />} />
-          <Route path="/zodiak" element={<Zodiak />} />
           <Route path="/nationality" element={<Nationality />} />
           <Route path="/school" element={<School />} />
           <Route path="/bmkg" element={<Bmkg />} />
@@ -33,5 +30,5 @@ export default function App() {
         </Routes>
       </main>
     </BrowserRouter>
-  )
+  );
 }

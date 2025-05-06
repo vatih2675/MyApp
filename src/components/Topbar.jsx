@@ -59,24 +59,74 @@ export default function Topbar() {
     <nav className="w-full shadow bg-white px-10 sticky top-0 flex justify-between items-center z-10">
       <h1 className="font-bold text-xl cursor-pointer">My App</h1>
       <div className="flex justify-center items-center navlink text-xs">
-        <NavLink to="/" className="py-3 px-4 hover:bg-black hover:text-white transition-all duration-300 cursor-pointer">Beranda</NavLink>
+        <NavLink
+          to="/"
+          className="py-3 px-4 hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Beranda
+        </NavLink>
         {/* <NavLink to="/weather" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Cuaca</NavLink> */}
-        <NavLink to="/gold" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Emas</NavLink>
-        <NavLink to="/nik" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">NIK</NavLink>
-        <NavLink to="/address" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Alamat</NavLink>
-        <NavLink to="/zodiak" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Zodiak</NavLink>
-        <NavLink to="/nationality" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Nasional</NavLink>
-        <NavLink to="/school" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Sekolah</NavLink>
-        <NavLink to="/bmkg" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">BMKG</NavLink>
-        <NavLink to="/qr" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">QR Code</NavLink>
-        <NavLink to="/ftp" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">FTP</NavLink>
+        <NavLink
+          to="/gold"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Emas
+        </NavLink>
+        <NavLink
+          to="/nik"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          NIK
+        </NavLink>
+        <NavLink
+          to="/address"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Alamat
+        </NavLink>
+        <NavLink
+          to="/nationality"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Nasional
+        </NavLink>
+        <NavLink
+          to="/school"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Sekolah
+        </NavLink>
+        <NavLink
+          to="/bmkg"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          BMKG
+        </NavLink>
+        <NavLink
+          to="/qr"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          QR Code
+        </NavLink>
+        <NavLink
+          to="/ftp"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          FTP
+        </NavLink>
       </div>
       <div className="flex flex-col justify-center items-end text-xs text-gray-800 font-mono cursor-default">
-        <div><i className="bi-calendar3 me-1"></i><span>{tanggalHariIni}</span></div>
-        <div><i className="bi-clock me-1"></i><span>{jamBerjalan}</span></div>
+        <div>
+          <i className="bi-calendar3 me-1"></i>
+          <span>{tanggalHariIni}</span>
+        </div>
+        <div>
+          <i className="bi-clock me-1"></i>
+          <span>{jamBerjalan}</span>
+        </div>
       </div>
     </nav>
-  )
+  );
 }
 
 

@@ -1,27 +1,28 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import News from "./News";
+import Zodiak from "./Zodiak";
 
-export default function NewsContent({categories, category, selectCategory}) {
-    let apiCategory = ""
-    for (let i = 0; i < categories.length; i++) {
-        if(category == i){
-            apiCategory = categories[i].path;
-        }
+export default function NewsContent({ categories, category, selectCategory }) {
+  let apiCategory = "";
+  for (let i = 0; i < categories.length; i++) {
+    if (category == i) {
+      apiCategory = categories[i].path;
     }
+  }
 
-    let [selCat, setSelCat] = useState([]);
+  let [selCat, setSelCat] = useState([]);
 
-    async function getSelectedNews() {
-      const dataSelectedNews = await axios.get(apiCategory);
-      setSelCat(dataSelectedNews.data);
-    }
+  async function getSelectedNews() {
+    const dataSelectedNews = await axios.get(apiCategory);
+    setSelCat(dataSelectedNews.data);
+  }
 
-    useEffect(() => {
-      getSelectedNews();
-    }, [apiCategory]);
+  useEffect(() => {
+    getSelectedNews();
+  }, [apiCategory]);
 
-    // console.log(category, apiCategory, selCat.data);
+  // console.log(category, apiCategory, selCat.data);
   return (
     <div className="flex justify-center items-start gap-3">
       <div className="min-w-2/12 flex flex-col rounded-xl bg-white shadow-md overflow-hidden transition-all duration-300">
@@ -40,11 +41,11 @@ export default function NewsContent({categories, category, selectCategory}) {
         ))}
       </div>
       <div className="w-6/12 rounded-xl bg-white shadow-md p-5">
-        {selCat.data !== undefined ? (
-            <News dataNews={selCat.data} />
-        ) : ""}
+        {selCat.data !== undefined ? <News dataNews={selCat.data} /> : ""}
       </div>
-      <div className="w-4/12"></div>
+      <div className="w-4/12 rounded-xl bg-white shadow-md p-5">
+        <Zodiak />
+      </div>
     </div>
   );
 }
