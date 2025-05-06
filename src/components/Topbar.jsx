@@ -67,6 +67,12 @@ export default function Topbar() {
         </NavLink>
         {/* <NavLink to="/weather" className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer">Cuaca</NavLink> */}
         <NavLink
+          to="/alquran"
+          className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Alquran
+        </NavLink>
+        <NavLink
           to="/gold"
           className="py-3 px-4 hover:bg-black/70 hover:text-white transition-all duration-300 cursor-pointer"
         >

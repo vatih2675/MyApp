@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Topbar from "./components/Topbar";
 import News from "./pages/news/Index";
-import Weather from "./pages/weather/Index";
 import Gold from "./pages/gold/Index";
 import Nik from "./pages/nik/Index";
 import Address from "./pages/address/Index";
@@ -10,6 +9,7 @@ import Bmkg from "./pages/bmkg/Index";
 import School from "./pages/school/Index";
 import Qr from "./pages/qr/Index";
 import Ftp from "./pages/ftp/Index";
+import Alquran from "./pages/alquran/Index";
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
       <main className="py-5 px-10">
         <Routes>
           <Route path="/" element={<News />} />
-          <Route path="/weather" element={<Weather />} />
+          <Route path="/alquran" element={<Alquran />} />
           <Route path="/gold" element={<Gold />} />
           <Route path="/nik" element={<Nik />} />
           <Route path="/address" element={<Address />} />

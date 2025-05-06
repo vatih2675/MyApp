@@ -14,7 +14,9 @@
     "@tailwindcss/vite": "^4.1.4",
     "axios": "^1.9.0",
     "react": "^19.0.0",
+    "react-audio-player": "^0.17.0",
     "react-dom": "^19.0.0",
+    "react-h5-audio-player": "^3.10.0-rc.1",
     "react-router-dom": "^7.5.3",
     "tailwindcss": "^4.1.4"
   },
