@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navlink a.active{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  cursor: default;
+  pointer-events: none;
+}
+
+.font-mono{
+  font-family: monospace;
+}
