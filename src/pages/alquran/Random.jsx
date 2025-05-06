@@ -9,7 +9,6 @@ export default function Random({ random }) {
       <p className="text-center my-3 text-sm">{random.translation}</p>
       <ReactAudioPlayer
         src={random.audio.alafasy}
-        autoPlay
         controls
         className="w-full h-8 mb-3"
       />
